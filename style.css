@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+.container {
+  display: flex;
+  margin: 12rem auto;
+  width: 75%;
+  /* border: 3px solid black; */
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.col {
+  padding: 5rem 3rem;
+  position: relative;
+}
+.col h1 {
+  padding: 2rem 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+}
+.col p {
+  font-size: 15px;
+  font-weight: 400;
+  padding-bottom: 8rem;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+button {
+  all: unset;
+  position: absolute;
+  bottom: 40px;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border-color: white;
+}
+
+.orange {
+  color: hsl(31, 77%, 52%);
+}
+.light-cyan {
+  color: hsl(184, 100%, 22%);
+}
+.dark-cyan {
+  color: hsl(179, 100%, 13%);
+}
+
+.orange:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  border: 2px solid white;
+}
+.light-cyan:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: white;
+  border: 2px solid white;
+}
+.dark-cyan:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: white;
+  border: 2px solid white;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    width: 80%;
+    margin: 4rem auto;
+  }
+
+  .col p {
+    padding-bottom: 3rem;
+  }
+}
